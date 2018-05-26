@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
-import {
-  createDrawing,
-} from './api';
+import { createDrawing } from './api';
 
 class DrawingForm extends Component {
   state = {
-    drawingName: '',
-  }
+    drawingName: ''
+  };
 
   handleSubmit = (event) => {
     event.preventDefault();
     createDrawing(this.state.drawingName);
     this.setState({
-      drawingName: '',
+      drawingName: ''
     });
-  }
+  };
 
   render() {
     return (
@@ -28,10 +26,9 @@ class DrawingForm extends Component {
             className="Form-drawingInput"
             required
           />
-          <button
-            type="submit"
-            className="Form-button"
-          >Create</button>
+          <button type="submit" className="Form-button">
+            Create
+          </button>
         </form>
       </div>
     );
