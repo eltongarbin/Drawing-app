@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { subscribeToDrawings } from './api';
+import { subscribeToDrawings } from './../../utils/Api';
 
 class DrawingList extends Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { subscribeToConnectionEvent } from './api';
+import { subscribeToConnectionEvent } from './../../utils/Api';
 
 class Connection extends Component {
   state = {

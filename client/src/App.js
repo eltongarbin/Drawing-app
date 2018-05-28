@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
-import DrawingForm from './DrawingForm';
-import DrawingList from './DrawingList';
-import Drawing from './Drawing';
-import Connection from './Connection';
+
+import DrawingForm from './components/Drawing/Form';
+import DrawingList from './components/Drawing/List';
+import Drawing from './components/Drawing/Drawing';
+import Connection from './components/UI/Connection';
 
 class App extends Component {
   state = {};
@@ -18,7 +18,6 @@ class App extends Component {
     let ctrl = (
       <div>
         <DrawingForm />
-
         <DrawingList selectDrawing={this.selectDrawing} />
       </div>
     );
@@ -37,9 +36,7 @@ class App extends Component {
         <div className="App-header">
           <h2>Our awesome drawing app</h2>
         </div>
-
         <Connection />
-
         {ctrl}
       </div>
     );

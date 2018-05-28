@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Canvas from 'simple-react-canvas';
-import { publishLine, subscribeToDrawingLines } from './api';
+
+import { publishLine, subscribeToDrawingLines } from './../../utils/Api';
 
 class Drawing extends Component {
   state = {
